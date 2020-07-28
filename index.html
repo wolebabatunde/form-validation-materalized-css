@@ -13,48 +13,64 @@
 <body>
 
     <div class="container">
+
         <h1>Sign Up</h1>
         <div class="row">
-            <form  class="col-s6" id="myForm" action="">
+            <form  class="col s6" id="myForm" action="">
                 <div class="row">
-                    <div class="input-field col-s6">
+                    <div class="input-field col s6">
                         <label for="Firstname"> First Name</label>
-                        <input type="text" name="First Name" id="firstName">
+                        <input type="text" name="First Name" id="firstName" onfocusout="validateFirstName()">
                         <span class="helper-text"></span>
                     </div>
 
-                    <div class="input-field col-s6">
+                    <div class="input-field col s6">
                         <label for="lastname"> Last Name</label>
-                        <input type="text" name="Last Name" id="lastName">
+                        <input type="text" name="Last Name" id="lastName" onfocusout="validateLastName()">
                         <span class="helper-text"></span>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="input-field col-s6">
+                    <div class="input-field col s6">
                         <label for="Passworld"> Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" onfocusout="validatePassworld()">
                         <span class="helper-text"></span>
                     </div>
-                </div>
+                
 
-                <div class="input-field col-sl">
+                <div class="input-field col s6">
                     <label for="confirmedPassword"> Confirm Password</label>
-                    <input type="password" name="Confirmed Password" id="confirmedpassword">
+                    <input type="password" name="Confirmed Password" id="confirmedPassword" onfocusout="validateConfirmedPassword()">
                     <span class="helper-text"></span>
                 </div>
+            </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email"> Email</label>
+                        <input type="email" name="Email" id="email" onfocusout="validateEmail()">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+
+                <button class="btn waves-effect waveslight" type="submit"> Sign Up</button>
 
             </form>
+
+            
+        <div class="col s6">
+            <img src="https://images.unsplash.com/photo-1595848426977-b5df510c4bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""
+            style= "width: 100%; border-radius: 6px; opacity: 0.85;">
+        </div>
         </div>
 
-        <div class="col-s6">
-            <img src="https://images.unsplash.com/photo-1595848426977-b5df510c4bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""
-            style= "border-radius: 6px; opacity: 0.85;">
-        </div>
+        
     </div>
   
     
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
