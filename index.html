@@ -20,7 +20,9 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <label for="Firstname"> First Name</label>
+                        <!-- <input type="text" name="First Name" id="firstName" onblur="ValidateTheFirstName()"> -->
                         <input type="text" name="First Name" id="firstName" onfocusout="validateFirstName()">
+                        <!-- <span style="color:red; font-weight: 900;display:none" id="fnerr">Please input the first name!!</span> -->
                         <span class="helper-text"></span>
                     </div>
 
@@ -34,7 +36,7 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <label for="Passworld"> Password</label>
-                        <input type="password" name="password" id="password" onfocusout="validatePassworld()">
+                        <input type="password" name="password" id="password" onfocusout="validatePassword()">
                         <span class="helper-text"></span>
                     </div>
                 
